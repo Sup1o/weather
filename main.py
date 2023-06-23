@@ -2,7 +2,7 @@ import requests
 import tkinter as tk
 
 def get_data(location):
-    API = "c702542e4a361637f387ea32ebb9d255" # Replace with your OpenWeatherMap API key
+    API = "YOUR API" # Replace with your OpenWeatherMap API key
     url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={API}"
     res = requests.get(url).json()
     return res
